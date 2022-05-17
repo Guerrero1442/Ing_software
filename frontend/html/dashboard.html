@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+		crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+</head>
+<title>Konshu</title>
+<body>
+	<main class="container-fluid vh-100">
+		<div class="row h-100">
+			<!-- navbar -->
+			<div class="col-2 bg-light">
+				<h1 class="my-3 fw-bold">Konshu</h1>
+				<div class="btn-group width my-5" role="group">
+					<button id="btnGroupDrop1" type="button"
+						class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						Camilo Arias
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+						<li><a class="dropdown-item" href="#">Dropdown link</a></li>
+						<li><a class="dropdown-item" href="#">Dropdown link</a></li>
+					</ul>
+				</div>
+				<ul class="nav flex-column mt-5 ">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Preguntas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Examenes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Estudiantes</a>
+					</li>
+				</ul>
+				<div class="mt-5 imagen">
+					<img src="../img/logo_gen.png" width="78px" alt="">
+				</div>
+			</div>
+			<div class="col-7 mt-3">
+				<div class="container d-flex flex-column">
+					<div class="d-flex justify-content-between align-items-center">
+						<h2 class="fw-bold">Bienvenido</h2>
+						<button class="btn btn-primary col-4 my-1">
+							<div class="row align-items-center justify-content-center">
+								<div class="col-2">
+									<img src="../img/add.svg" width="32"
+										alt="icon add">
+								</div>
+
+								<div class="col-10 fw-bold">
+									Crear Pregunta
+								</div>
+							</div>
+						</button>
+					</div>
+					<h2 class="my-3 fw-bold">Ultimas preguntas</h2>
+					<div class="d-flex cartas mb-3">
+						<div class="card mx-5" style="width: 15rem;">
+							<div class="card-body">
+								<h5 class="card-title">Capital mexico</h5>
+								<p class="card-text">
+									Se le pregunta al estudiante la ubicacion de la
+									capital de mexico para ver su nivel de geografia
+								</p>
+								<a href="#" class="btn btn-primary">Go somewhere</a>
+							</div>
+						</div>
+						<div class="card" style="width: 15rem;">
+							<div class="card-body">
+								<h5 class="card-title">Masa del sol</h5>
+								<p class="card-text">
+									El estudiante con unos datos dados en el
+									enunciado tendra que calcular la masa del sol
+								</p>
+								<a href="#" class="btn btn-primary">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+					<h2 class="my-3 fw-bold">Tus clases</h2>
+					<div class="d-flex clases">
+						<div class="card bg-dark text-white col-3 ">
+							<img src="../img/desarrollo.png" class="card-img" alt="...">
+							<div class="card-img-overlay">
+								<h5 class="card-title">Calculo II</h5>
+							</div>
+						</div>
+						<div class="card bg-dark text-white col-3 mx-5">
+							<img src="../img/desarrollo.png" class="card-img" alt="...">
+							<div class="card-img-overlay">
+								<h5 class="card-title">Calculo II</h5>
+							</div>
+						</div>
+						<div class="card bg-dark text-white col-3">
+							<img src="../img/desarrollo.png" class="card-img" alt="...">
+							<div class="card-img-overlay">
+								<h5 class="card-title">Calculo II</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3 d-flex flex-column align-items-center  bg-light">
+				<img src="../img/Person.jpg" class="img-fluid mt-3 col-8 rounded-circle" alt="...">
+				<div class="col-12 mt-5">
+					<table class="table">
+
+						<tbody>
+							<tr>
+								<th scope="row">Nombre</th>
+								<td>Camilo Arias</td>
+
+							</tr>
+							<tr>
+								<th scope="row">Edad</th>
+								<td>28</td>
+
+							</tr>
+							<tr>
+								<th scope="row">Carrera</th>
+								<td> Ingenieria de sistemas</td>
+							</tr>
+							<tr>
+								<th scope="row">Codigo</th>
+								<td> 1854400290</td>
+							</tr>
+							<tr>
+								<th scope="row">role</th>
+								<td> Profesor</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
