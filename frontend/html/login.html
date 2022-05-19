@@ -14,23 +14,31 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col"></div>
 			<div class="col">
 				<div class="text-end">
-					<img src="./img/logo_gen.png" width="48" alt="logo aplicacion">
+					<img src="../img/logo_gen.png" width="48" alt="logo aplicacion">
 				</div>
-				<h2 class="fw-bold text-center py-5">Inicio sesion</h2>
+				<h2 class="fw-bold text-center py-5">Konshu by politecnico grancolombiano</h2>
 
 				<form action=".">
 					<div class="mb-4">
-						<label for="email" class="form-label">Correo electronico</label>
+						<label for="email" class="form-label">Username</label>
 						<input type="email" class="form-control" name="email">
 					</div>
 					<div class="mb-4">
-						<label for="password" class="form-label">Contraseña</label>
+						<label for="password" class="form-label">Password</label>
 						<input type="password" class="form-control" name="password">
 					</div>
-					<div class="mb-4"></div>
+					<div class="mb-4 form-check">
+						<input type="checkbox" name="connected" class="form-check-input" id="">
+						<label for="connected" class="form-check-label">Remember username</label>
+					</div>
+					<div class="my-3">
+						<span><a href="#">Forgotten your username or password?</a></span>
+					</div>
+					<div class="d-grid">
+						<button type="submit" class="btn btn-primary">Log in</button>
+					</div>
 				</form>
 			</div>
 		</div>
