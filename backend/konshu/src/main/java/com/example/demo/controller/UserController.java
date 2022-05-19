@@ -12,11 +12,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.model.User;
+
 import com.example.demo.repository.UserRepository;
 @CrossOrigin(origins = "http://127.0.0.1:4200")
 
 @RestController // Defines that this class is a spring bean
 @RequestMapping("/api/v1/")
+
 public class UserController {
 	@Autowired
 	UserRepository userRepository;
@@ -27,7 +29,7 @@ public class UserController {
 		return userRepository.findAll();
 	}
 	
-	@GetMapping("/Users/{id}")
+	@GetMapping("/User/{id}")
 	public User getUserByID(@PathVariable String id) {
 		return userRepository.findById(id).get();
 	}
@@ -38,11 +40,12 @@ public class UserController {
 	}
 	
 	@PostMapping("/UserList")
-	public List<User> saveListCustomers(@RequestBody List<User> users) {
+	public List<User> saveListUsers(@RequestBody List<User> users) {
 		return userRepository.saveAll(users);
 	}
-	
+
+}
+
 
 		
-		
-}
+
